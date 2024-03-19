@@ -4,11 +4,11 @@ object calcSum {
     list.sum
   }
 
-  val numbers = List(1, 2, 3, 4, 5)
-  println(calculateSum(numbers))
+  //val numbers = List(1, 2, 3, 4, 5)
+  //println(calculateSum(numbers))
 
   // Recursive
-  def calculateSum(list: List[Int]): Int = {
+  def calculateSumRec(list: List[Int]): Int = {
     @scala.annotation.tailrec
     def calculateSumHelper(list: List[Int], acc: Int): Int = {
       list match {
@@ -19,8 +19,8 @@ object calcSum {
     calculateSumHelper(list, 0)
   }
 
-  val numbers = List(1, 2, 3, 4, 5)
-  println(calculateSum(numbers))
+  //val numbers = List(1, 2, 3, 4, 5)
+  //println(calculateSum(numbers))
 
 
 }
